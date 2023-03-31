@@ -1,12 +1,12 @@
-import express from "express";
-import * as dotenv from "dotenv";
-import cors from "cors";
+const express = require("express");
+const cors = require("cors");
 
 import dalleRoutes from "./routes/dalle.routes.js";
 
-dotenv.config();
+require("dotenv").config();
 
 const app = express();
+app.use(express.static("public"));
 app.use(cors());
 app.use(express.json({ limit: "50mb" }));
 
@@ -17,3 +17,5 @@ app.get("/", (req, res) => {
 });
 
 app.listen(8080, () => console.log("Server has started on Port 8080"));
+
+module.exports = app;
