@@ -30,6 +30,8 @@ const Customizer = () => {
 		stylishShirt: false,
 	});
 
+	const backendURL = "https://ai-image-shirt.vercel.app/api/v1/dalle";
+
 	// show tab content depending on active tab
 	const generateTabContent = () => {
 		switch (activeEditorTab) {
@@ -55,7 +57,7 @@ const Customizer = () => {
 		if (!prompt) return alert("Please enter a prompt!");
 		try {
 			setGeneratingImg(true);
-			const response = await fetch("http://localhost:8080/api/v1/dalle", {
+			const response = await fetch(backendURL, {
 				method: "POST",
 				headers: { "Content-Type": "application/json" },
 				body: JSON.stringify({
