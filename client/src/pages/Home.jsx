@@ -13,6 +13,12 @@ import state from "../store";
 
 const Home = () => {
 	const snap = useSnapshot(state);
+
+	const handleGoNext = () => {
+		setTimeout(() => {
+			state.intro = false;
+		}, 100);
+	};
 	return (
 		<AnimatePresence>
 			{snap.intro && (
@@ -42,7 +48,7 @@ const Home = () => {
 							<CustomButton
 								type="filled"
 								title="Customize it"
-								handleClick={() => (state.intro = false)}
+								handleClick={handleGoNext}
 								customStyles="w-fit px-4 py-2.5 font-bold text-sm"
 							/>
 						</motion.div>
