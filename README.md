@@ -6,9 +6,9 @@ DEMO: https://threejs-frontend.vercel.app/
 Vite, React, ThreeJs, TailwindCSS, Node.Js, OpenAi
 
 # Useful Links
-https://vitejs.dev/guide/
-https://react.dev/reference/react
-[https://threejs.org/](https://threejs.org/docs/index.html#manual/en/introduction/Creating-a-scene)
-https://tailwindcss.com/docs/installation
-https://nodejs.org/en/docs
+https://vitejs.dev/guide/ <br/>
+https://react.dev/reference/react<br/>
+[https://threejs.org/](https://threejs.org/docs/index.html#manual/en/introduction/Creating-a-scene)<br/>
+https://tailwindcss.com/docs/installation<br/>
+https://nodejs.org/en/docs<br/>
 https://openai.com/
